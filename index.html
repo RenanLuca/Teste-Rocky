@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
-   
+  
 </head>
 <body>
     <section class="main">
         <header class="container">
-            <nav>
+            <nav class="nav-web">
                 <div class="nav-logo">
-                    <img src="assets/web/logo.png" alt="Logo-Rocky">
+                    <img src="assets/web/logo.png" alt="Logo-Rocky" id="logo">
                 </div>
                 <div class="nav-items">
                     <ul>
@@ -23,11 +23,27 @@
                         <li>Serviços</li>
                         <li>Diferenciais</li>
                         <li>Trabalhe Conosco</li>
-                        <li>contato</li>
+                        <li>Contato</li>
                         <li>Blog</li>
                     </ul>
                 </div>
             </nav>
+            <div class="nav-mobile-container">
+                <ion-icon id="icon-nav-mobile" name="menu-outline" onclick="menuHandle()"></ion-icon>
+                <img src="assets/mobile/logo.png" alt="Logo-Rocky" id="logo">
+                <span id="nav-close"  onclick="menuHandle()">X</span>
+                <nav id="nav-mobile">
+                    <ul id="ul-mobile">
+                        <li>Sobre a rocky</li>
+                        <li>Serviços</li>
+                        <li>Diferenciais</li>
+                        <li>Trabalhe Conosco</li>
+                        <li>Contato</li>
+                        <li>Blog</li>
+                    </ul>
+                </nav>
+            </div>
+          
             <div class="header-content">
                 <div class="header-title">
                   <h1>full digital performance</h1>
@@ -101,7 +117,7 @@
         <footer class="container">
             <div class="footer-info">
                 <div class="footer-social">
-                    <img src="assets/web/logo.png" alt="Logo rocky">
+                    <img src="assets/web/logo.png" alt="Logo rocky" id="logo-footer">
                     <div class="footer-redes">
                         <ion-icon name="logo-facebook"></ion-icon>
                         <ion-icon name="logo-linkedin"></ion-icon>
@@ -136,8 +152,10 @@
                 </form>  
             </div>
         </footer>
+    
     </section>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
