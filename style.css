@@ -13,6 +13,9 @@ body {
     margin: auto;
     width: 90vw;
 }
+input {
+    box-sizing: border-box;
+}
 main {
     background-image: url(assets/web/bg.png);
     background-size: cover;
@@ -292,7 +295,7 @@ footer {
 }
 .footer-redes ion-icon {
     font-size: 3rem;
-    margin: 0px 20px;
+    margin-left: 1rem;
     color: #fff;
 }
 .icon-footer {
