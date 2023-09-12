@@ -2,6 +2,7 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+/* Geral */
 body {
     margin: 0;
     width: 100vw;
@@ -11,7 +12,6 @@ body {
 .main {
     margin: auto;
     width: 90vw;
-
 }
 main {
     background-image: url(assets/web/bg.png);
@@ -24,14 +24,13 @@ button, input[type="submit"], li {
 .container {
     padding: 2% 6% 1px 6%;
 }
-header {
-    background-image: url(assets/web/header-bg.png);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-}    
+.hover:hover {
+    background-color:#0a7d8a;
+}
+ion-icon{
+    font-size: 4rem;
+    color: #fff;
+}
    /* NAV WEB!!!  */
 .nav-web {
     width: 100%;
@@ -102,6 +101,14 @@ header {
 }
 
 /* HEADER!!! */
+header {
+    background-image: url(assets/web/header-bg.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
 .header-content {
     width: 900px;
     display: flex;
@@ -135,7 +142,9 @@ border: none;
 border-radius: 40px;
 margin: 6% 6% 16% 6%;
 }
+/* MAIN CONTENT */
 
+/* ABOUT CONTENT */
 .about {
     display: flex;
     flex-direction: column;
@@ -157,16 +166,14 @@ margin: 6% 6% 16% 6%;
     padding: 2%;
     margin-bottom: 7%;
 }
+
+/* GERAL CARDS */
 .services, .differentials {
     display: flex;
     flex-direction: column;
     align-items: start;
     margin-bottom: 6rem;
     gap: 2rem;
-}
-.cards-services div {
-    border-radius: 30px;
-    width: 100%;
 }
 .cards-services, .cards-differentials {
     display: flex;
@@ -176,6 +183,21 @@ margin: 6% 6% 16% 6%;
     gap: 20px;
    
 }
+h3 {
+    color: #EFE60B;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 8% 0 7% 0
+
+}
+
+/* SERVICES CARDS */
+.cards-services div {
+    border-radius: 30px;
+    width: 100%;
+}
+
 .services p, h3 {
     margin: 0;
 }
@@ -187,14 +209,7 @@ margin: 6% 6% 16% 6%;
     font-weight: 400;
     line-height: 1.4rem;
 }
-h3 {
-    color: #EFE60B;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.3rem;
-    padding: 8% 0 7% 0
 
-}
 .card-services-1 {
     background: url(assets/web/s3-ft1.png);
     background-size: cover;
@@ -211,6 +226,8 @@ h3 {
     background-position: top;
 
 }
+
+/* DIFFERENTIALS CARDS */
 #medal{
     font-size: 8rem;
     font-weight: bold;
@@ -245,6 +262,8 @@ h3 {
 .cards-differentials div {
     height: 650px;
 }
+
+/* FOOTER */
 footer {
     border-top: 60px solid #EFE60B;
     border-bottom: 60px solid #EFE60B;
@@ -253,6 +272,8 @@ footer {
     justify-content: center;
     background-color: black;
 }
+
+/* FOOTER INFO */
 .footer-info {
     display: flex;
     flex-direction: column;
@@ -262,9 +283,7 @@ footer {
     gap: 1.3rem;
     padding-right: 20%;
 }
-.footer-form {
-    width: 50%;
-}
+
 .footer-social {
     display: flex;
     justify-content: space-between;
@@ -312,7 +331,10 @@ footer {
 .footer-info p:nth-child(6) {
     color: aqua;
 }
-
+/* FOOTER FORM */
+.footer-form {
+    width: 50%;
+}
 .footer-form #form {
     background-color:#818181 ;
     display: flex;
@@ -345,12 +367,12 @@ footer {
     font-weight: 600;
     font-size: 1.2rem;
 }
-.hover:hover {
-    background-color:#0a7d8a;
-}
+
 .form input[type="submit"]:hover {
     background-color:#0a7d8a;
 }
+
+/* MEDIA QUERIES */
 @media screen and (max-width:1451px) {
     .main{
         width: 100vw;
@@ -470,7 +492,3 @@ footer {
  
 }
 
-ion-icon{
-    font-size: 4rem;
-    color: #fff;
-}
